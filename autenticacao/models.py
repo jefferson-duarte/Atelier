@@ -7,5 +7,8 @@ class Contato(models.Model):
     sobre_nome = models.CharField(max_length=25)
     email = models.CharField(max_length=50)
     telefone = models.CharField(max_length=15)
-    endereco = models.CharField(max_length=50)
+    endereco = models.CharField(max_length=50, verbose_name='Endereço')
     foto = models.ImageField(blank=True, upload_to='fotos/%Y/%m/%d')
+
+    def __str__(self):
+        return self.nome
