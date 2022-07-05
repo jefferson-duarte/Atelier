@@ -8,6 +8,7 @@
 {% endblock head %}
 
 {% block content %}
+        
     <section class="vh-100 gradient-custom">
         <div class="container py-5 h-100">
             <div class="row d-flex justify-content-center align-items-center h-100">
@@ -18,22 +19,26 @@
                             <div class="mb-md-2 mt-md-1 pb-2">
                 
                                 <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
-                                <p class="text-white-50 mb-5">Please enter your login and password!</p>
-                
-                                <div class="form-outline form-white mb-4">
-                                    <input name="email "type="email" id="typeEmailX" class="form-control form-control-lg" />
-                                    <label class="form-label" for="typeEmailX">Email</label>
-                                </div>
-                
-                                <div class="form-outline form-white mb-4">
-                                    <input name="password" type="password" id="typePasswordX" class="form-control form-control-lg" />
-                                    <label class="form-label" for="typePasswordX">Password</label>
-                                </div>
-                
-                                <p class="small mb-5 pb-lg-2"><a class="text-white-50" href="{% url 'reset' %}">Forgot password?</a></p>
-                
-                                <button class="btn btn-outline-light btn-lg px-5" type="submit">Login</button>
-                
+                                <p class="text-white-50 mb-5">Please enter your usename and password!</p>
+                                
+                                <form action="{% url 'login' %}" method="post">
+                                    {% csrf_token %}
+                                    
+                                    <div class="form-outline form-white mb-4">
+                                        <input name="usuario" type="text" class="form-control form-control-lg"/>
+                                        <label class="form-label">Username</label>
+                                    </div>
+                    
+                                    <div class="form-outline form-white mb-4">
+                                        <input name="password" type="password" class="form-control form-control-lg" />
+                                        <label class="form-label">Password</label>
+                                    </div>
+                    
+                                    <p class="small mb-5 pb-lg-2"><a class="text-white-50" href="{% url 'reset' %}">Forgot password?</a></p>
+                    
+                                    <button class="btn btn-outline-light btn-lg px-5" type="submit">Login</button>
+                                </form>
+
                             </div>
             
                         </div>
@@ -42,4 +47,5 @@
             </div>
         </div>
     </section>
+
 {% endblock content %}
