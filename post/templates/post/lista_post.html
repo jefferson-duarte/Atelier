@@ -2,180 +2,46 @@
 {% load static %}
 
 {% block head %}
-
-    <link rel="stylesheet" href="{% static 'post/css/lista_post.css' %}">
-
+    <link rel="stylesheet" href={% static 'post/css/lista_post.css' %}>
 {% endblock head %}
 
 {% block content %}
 
-<div class="container bootstrap snippets bootdey">
-    <div class="row">
-		<div class="col-md-6 col-sm-6 col-xs-12">
-            <section class="widget">
-                <div class="widget-controls">
-                    <a href="#"><i class="fa fa-refresh"></i></a>
-                    <a href="#" data-widgster="close"><i class="glyphicon glyphicon-remove"></i></a>
-                </div>
-                <div class="widget-body">
-                    <div class="post-user mt-n-xs">
-                        <span class="thumb pull-left mr">
-                            <img class="img-circle" src="https://bootdey.com/img/Content/user_2.jpg" alt="...">
-                        </span>
-                        <h5 class="mb-xs mt-xs">Jess <span class="fw-semi-bold">@bootdey</span></h5>
-                        <p class="fs-mini text-muted"><time>25 mins</time> &nbsp; <i class="fa fa-map-marker"></i> &nbsp; near Amsterdam</p>
+<div class="container-fluid">
+    <div class="container bootstrap snippets bootdey">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-12">
+                <section class="widget">
+                    <div class="widget-body">
+                        <div class="post-user mt-n-xs">
+                            <span class="thumb pull-left mr">
+                                <img class="img-circle" src="https://bootdey.com/img/Content/user_2.jpg" alt="...">
+                            </span>
+                            <h5 class="mb-xs mt-xs">Jess <span class="fw-semi-bold">@bootdey</span></h5>
+                            <p class="fs-mini text-muted"><time>25 mins</time> &nbsp; <i class="fa fa-map-marker"></i> &nbsp; near Amsterdam</p>
+                        </div>
+                        <div class="widget-middle-overflow windget-padding-md clearfix bg-danger text-white">
+                            <h3 class="mt-lg mb-lg">Sing - <span class="fw-semi-bold">Bootdey</span> Gallery of free snippets</h3>
+                            <ul class="tags text-white pull-right">
+                                <li><a href="#">design</a></li>
+                            </ul>
+                        </div>
+                        <p class="text-light fs-mini mt-sm">Lots of cool stuff is happening around you. Just calm down for a sec and listen. Colors, sounds,
+                            thoughts, ideas. </p>
                     </div>
-                    <div class="widget-middle-overflow windget-padding-md clearfix bg-danger text-white">
-                        <h3 class="mt-lg mb-lg">Sing - <span class="fw-semi-bold">Bootdey</span> Gallery of free snippets</h3>
-                        <ul class="tags text-white pull-right">
-                            <li><a href="#">design</a></li>
+                    <footer class="bg-body-light">
+                        <ul class="post-links">
+                            <li><a href="#">1 hour</a></li>
+                            <li><a href="#"><span class="text-danger"><i class="fa fa-heart"></i> Like</span></a></li>
+                            <li><a href="#">Comment</a></li>
                         </ul>
-                    </div>
-                    <p class="text-light fs-mini mt-sm">Lots of cool stuff is happening around you. Just calm down for a sec and listen. Colors, sounds,
-                        thoughts, ideas. </p>
-                </div>
-                <footer class="bg-body-light">
-                    <ul class="post-links">
-                        <li><a href="#">1 hour</a></li>
-                        <li><a href="#"><span class="text-danger"><i class="fa fa-heart"></i> Like</span></a></li>
-                        <li><a href="#">Comment</a></li>
-                    </ul>
-                </footer>
-            </section>
-		</div>
-
-		<div class="col-md-6 col-sm-6 col-xs-12">
-            <section class="widget">
-                <div class="widget-controls">
-                    <a href="#"><i class="fa fa-refresh"></i></a>
-                    <a href="#" data-widgster="close"><i class="glyphicon glyphicon-remove"></i></a>
-                </div>
-                <div class="widget-body">
-                    <div class="post-user mt-n-xs">
-                        <span class="thumb pull-left mr">
-                            <img class="img-circle" src="https://bootdey.com/img/Content/user_3.jpg" alt="...">
-                        </span>
-                        <h5 class="mb-xs mt-xs">Jess <span class="fw-semi-bold">@bootdey</span></h5>
-                        <p class="fs-mini text-muted"><time>25 mins</time> &nbsp; <i class="fa fa-map-marker"></i> &nbsp; near Amsterdam</p>
-                    </div>
-                    <div class="widget-middle-overflow windget-padding-md clearfix bg-info text-white">
-                        <h3 class="mt-lg mb-lg">Sing - <span class="fw-semi-bold">Next Bootdey</span> Social site for bootstrap lovers</h3>
-                        <ul class="tags text-white pull-right">
-                            <li><a href="#">design</a></li>
-                        </ul>
-                    </div>
-                    <p class="text-light fs-mini mt-sm">Lots of cool stuff is happening around you. Just calm down for a sec and listen. Colors, sounds,
-                        thoughts, ideas. </p>
-                </div>
-                <footer class="bg-body-light">
-                    <ul class="post-links">
-                        <li><a href="#">1 hour</a></li>
-                        <li><a href="#"><span class="text-danger"><i class="fa fa-heart"></i> Like</span></a></li>
-                        <li><a href="#">Comment</a></li>
-                    </ul>
-                </footer>
-            </section>
-		</div>
-
-        <div class="col-md-6 col-sm-6 col-xs-12">
-            <section class="widget">
-                <div class="widget-controls">
-                    <a href="#"><i class="fa fa-refresh"></i></a>
-                    <a href="#" data-widgster="close"><i class="glyphicon glyphicon-remove"></i></a>
-                </div>
-                <div class="widget-body">
-                    <div class="post-user mt-n-xs">
-                        <span class="thumb pull-left mr">
-                            <img class="img-circle" src="https://bootdey.com/img/Content/user_3.jpg" alt="...">
-                        </span>
-                        <h5 class="mb-xs mt-xs">Jess <span class="fw-semi-bold">@bootdey</span></h5>
-                        <p class="fs-mini text-muted"><time>25 mins</time> &nbsp; <i class="fa fa-map-marker"></i> &nbsp; near Amsterdam</p>
-                    </div>
-                    <div class="widget-middle-overflow windget-padding-md clearfix bg-info text-white">
-                        <h3 class="mt-lg mb-lg">Sing - <span class="fw-semi-bold">Next Bootdey</span> Social site for bootstrap lovers</h3>
-                        <ul class="tags text-white pull-right">
-                            <li><a href="#">design</a></li>
-                        </ul>
-                    </div>
-                    <p class="text-light fs-mini mt-sm">Lots of cool stuff is happening around you. Just calm down for a sec and listen. Colors, sounds,
-                        thoughts, ideas. </p>
-                </div>
-                <footer class="bg-body-light">
-                    <ul class="post-links">
-                        <li><a href="#">1 hour</a></li>
-                        <li><a href="#"><span class="text-danger"><i class="fa fa-heart"></i> Like</span></a></li>
-                        <li><a href="#">Comment</a></li>
-                    </ul>
-                </footer>
-            </section>
-		</div>
-
-        <div class="col-md-6 col-sm-6 col-xs-12">
-            <section class="widget">
-                <div class="widget-controls">
-                    <a href="#"><i class="fa fa-refresh"></i></a>
-                    <a href="#" data-widgster="close"><i class="glyphicon glyphicon-remove"></i></a>
-                </div>
-                <div class="widget-body">
-                    <div class="post-user mt-n-xs">
-                        <span class="thumb pull-left mr">
-                            <img class="img-circle" src="https://bootdey.com/img/Content/user_3.jpg" alt="...">
-                        </span>
-                        <h5 class="mb-xs mt-xs">Jess <span class="fw-semi-bold">@bootdey</span></h5>
-                        <p class="fs-mini text-muted"><time>25 mins</time> &nbsp; <i class="fa fa-map-marker"></i> &nbsp; near Amsterdam</p>
-                    </div>
-                    <div class="widget-middle-overflow windget-padding-md clearfix bg-info text-white">
-                        <h3 class="mt-lg mb-lg">Sing - <span class="fw-semi-bold">Next Bootdey</span> Social site for bootstrap lovers</h3>
-                        <ul class="tags text-white pull-right">
-                            <li><a href="#">design</a></li>
-                        </ul>
-                    </div>
-                    <p class="text-light fs-mini mt-sm">Lots of cool stuff is happening around you. Just calm down for a sec and listen. Colors, sounds,
-                        thoughts, ideas. </p>
-                </div>
-                <footer class="bg-body-light">
-                    <ul class="post-links">
-                        <li><a href="#">1 hour</a></li>
-                        <li><a href="#"><span class="text-danger"><i class="fa fa-heart"></i> Like</span></a></li>
-                        <li><a href="#">Comment</a></li>
-                    </ul>
-                </footer>
-            </section>
-		</div>
-
-        <div class="col-md-6 col-sm-6 col-xs-12">
-            <section class="widget">
-                <div class="widget-controls">
-                    <a href="#"><i class="fa fa-refresh"></i></a>
-                    <a href="#" data-widgster="close"><i class="glyphicon glyphicon-remove"></i></a>
-                </div>
-                <div class="widget-body">
-                    <div class="post-user mt-n-xs">
-                        <span class="thumb pull-left mr">
-                            <img class="img-circle" src="https://bootdey.com/img/Content/user_3.jpg" alt="...">
-                        </span>
-                        <h5 class="mb-xs mt-xs">Jess <span class="fw-semi-bold">@bootdey</span></h5>
-                        <p class="fs-mini text-muted"><time>25 mins</time> &nbsp; <i class="fa fa-map-marker"></i> &nbsp; near Amsterdam</p>
-                    </div>
-                    <div class="widget-middle-overflow windget-padding-md clearfix bg-info text-white">
-                        <h3 class="mt-lg mb-lg">Sing - <span class="fw-semi-bold">Next Bootdey</span> Social site for bootstrap lovers</h3>
-                        <ul class="tags text-white pull-right">
-                            <li><a href="#">design</a></li>
-                        </ul>
-                    </div>
-                    <p class="text-light fs-mini mt-sm">Lots of cool stuff is happening around you. Just calm down for a sec and listen. Colors, sounds,
-                        thoughts, ideas. </p>
-                </div>
-                <footer class="bg-body-light">
-                    <ul class="post-links">
-                        <li><a href="#">1 hour</a></li>
-                        <li><a href="#"><span class="text-danger"><i class="fa fa-heart"></i> Like</span></a></li>
-                        <li><a href="#">Comment</a></li>
-                    </ul>
-                </footer>
-            </section>
-		</div>
-	</div>
+                    </footer>
+                </section>
+            </div>
+        </div>
+    </div>
 </div>
+
+
 
 {% endblock content %}

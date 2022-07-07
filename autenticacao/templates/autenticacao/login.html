@@ -21,6 +21,14 @@
                                 <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
                                 <p class="text-white-50 mb-5">Please enter your usename and password!</p>
                                 
+                                {% if messages %}
+                                    {% for message in messages %}
+                                            <div class="alert {{message.tags}}">
+                                                {{message}}
+                                            </div>
+                                    {% endfor %}
+                                {% endif %}
+
                                 <form action="{% url 'login' %}" method="post">
                                     {% csrf_token %}
                                     
