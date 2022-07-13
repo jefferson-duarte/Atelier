@@ -25,11 +25,12 @@
 
             </div>	
         
-            <form class="card mt-4">
+            <form class="card mt-4" method="POST">
+                {% csrf_token %}
                 <div class="card-body">
                     <div class="form-group">
                         <label for="email-for-pass">Enter your email address</label>
-                        <input class="form-control" type="text" id="email-for-pass" required=""><small class="form-text text-muted">Enter the email address you used during the registration on.</small>
+                        <input class="form-control" type="text" name="email" required><small class="form-text text-muted">Enter the email address you used during the registration on.</small>
                     </div>
                 </div>
                 <div class="card-footer">

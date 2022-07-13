@@ -1,8 +1,8 @@
 from django.shortcuts import redirect, render
-from django.http import HttpResponse
 from django.contrib import auth
 from django.contrib import messages
 from django.contrib.messages import constants
+from django.contrib.auth.models import User
 
 
 def login(request):
@@ -37,4 +37,8 @@ def logout(request):
     
     
 def reset_senha(request):
+    email = request.POST.get('email')
+    user = User.objects.filter(email=email)
+    
+    print(user)
     return render(request, 'autenticacao/reset.html')
