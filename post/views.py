@@ -20,4 +20,5 @@ def post_create(request):
 
 
 def lista_post(request):
-    return render(request, 'post/lista_post.html')
+    posts = CreatePost.objects.all()
+    return render(request, 'post/lista_post.html', {'posts': posts})

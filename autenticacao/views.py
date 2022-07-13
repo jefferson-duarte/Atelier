@@ -35,7 +35,7 @@ def logout(request):
     messages.add_message(request, constants.SUCCESS, 'Logout realizado com sucesso.')
     return redirect('/auth/login')
     
-    
+# TODO configurar o reset de senha
 def reset_senha(request):
     email = request.POST.get('email')
     user = User.objects.filter(email=email)
