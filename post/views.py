@@ -20,5 +20,8 @@ def post_create(request):
 
 
 def lista_post(request):
-    posts = CreatePost.objects.all()
-    return render(request, 'post/lista_post.html', {'posts': posts})
+    posts = CreatePost.objects.all().order_by('-id')
+    context = {
+        'posts': posts
+    }
+    return render(request, 'post/lista_post.html', context)
