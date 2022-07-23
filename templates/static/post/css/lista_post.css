@@ -1,116 +1,40 @@
-
-.thumb img {
-height: auto;
-max-width: 100%;
-vertical-align: middle;
-}
-
-.post-user img {
-border: 3px solid white;
-}
-
 .widget {
 position: relative;
+margin-top: 30px;
 margin-bottom: 30px;
 padding: 15px 20px;
-background: gray;
+background: #2f2f5f;
 border-radius: 3px;
 }
 
-.widget-controls {
-position: absolute;
-z-index: 1;
-top: 0;
-right: 0;
-padding: 14px;
-font-size: 12px;
+h1 {
+    text-align: center;
+    font-family: sans-serif;
+    color: white;
+    text-decoration: underline;
 }
 
-.widget-controls>a {
-padding: 1px 4px;
-border-radius: 4px;
-color: rgba(0,0,0,0.4);
--webkit-transition: color 0.15s ease-in-out;
--o-transition: color 0.15s ease-in-out;
-transition: color 0.15s ease-in-out;
+h5 {
+    text-align: center;
+    color: white;
 }
 
-.thumb {
-position: relative;
-display: inline-block;
-text-align: center;
-width: 48px;
+p {
+    color: white;
+    background-color: #6837b2;
+    padding: 15px;
+    border-radius: 5px;
 }
 
-.thumb img {
-height: auto;
-max-width: 100%;
-vertical-align: middle;
+.post-user {
+    margin-bottom: 0px;
 }
-
-.post-user img {
-border: 3px solid white;
-}
-
 .fs-mini {
 font-size: 13px;
-}
-
-.bg-danger, .bg-info {
--webkit-transition: background-color 0.15s ease-in-out;
--o-transition: background-color 0.15s ease-in-out;
-transition: background-color 0.15s ease-in-out;
-}
-
-.bg-danger {
-background-color: #dd5826;
-}
-
-.bg-info {
-background-color: #39bbdb;;
-}
-
-.text-white {
-color: #fff;
-}
-
-.widget-middle-overflow {
-position: relative;
-margin: 0 -20px;
-}
-
-.windget-padding-md {
-padding: 15px 20px;
-}
-
-.mb-lg {
-margin-bottom: 30px;
-}
-
-.mt-lg {
-margin-top: 30px;
 }
 
 .fw-semi-bold {
 font-weight: 600;
-}
-
-.tags {
-padding-left: 0;
-list-style: none;
-}
-
-.tags>li>a {
-padding: 2px 8px;
-font-size: 13px;
-border-radius: 6px;
-border: 1px solid white;
-color: inherit;
-text-decoration: none;
-}
-
-.fs-mini {
-font-size: 13px;
 }
 
 .text-light {
@@ -119,30 +43,4 @@ opacity: .8;
 
 .mt-sm {
 margin-top: 10px;
-}
-
-.bg-body-light {
-background-color: rgb(79, 77, 77);
-}
-
-.widget > footer {
-margin: 0 -20px -15px;
-padding: 30px 20px;
-}
-
-.post-links {
-margin-bottom: 0;
-font-size: 12px;
-padding-left: 0;
-}
-
-.post-links>li {
-float: left;
-list-style: none;
-margin:8px;
-}
-
-.post-links>li>a {
-text-decoration: none;
-color: #999;
 }

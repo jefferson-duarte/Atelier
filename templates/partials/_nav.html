@@ -1,4 +1,10 @@
-<nav class="navbar navbar-expand-sm bg-secondary navbar-dark">
+{% load static %}
+
+{% block head %}
+  <link rel="stylesheet" href="{% static 'nav_bar/css/nav.css' %}">
+{% endblock head %}
+
+<nav class="navbar navbar-expand-sm navbar-dark">
     <ul class="navbar-nav">
       <li class="nav-item active">
         <a class="nav-link" href="{% url 'lista_post' %}">Atelier</a>

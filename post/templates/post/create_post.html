@@ -3,30 +3,29 @@
 {% block content %}
 
 <section>
+    <div class="form">
+        <form action="{% url 'create_post' %}" method="POST">
+            {% csrf_token %}
 
-    <form action="{% url 'create_post' %}" method="POST">
-        {% csrf_token %}
+            <div class="content mt-3 ml-5">
+                <label>Titulo</label>
+                <input type="text" name="titulo">
+                <br>
 
-        <div class="content mt-3 ml-5">
-            <label>Titulo</label>
-            <input type="text" name="titulo">
-            <br>
+                <label>Descrição Curta:</label>
+                <input name="descricao_curta"></textarea>
+                <br>
+            
+                <label>Descrição Longa:</label>
+                <br>
+                <textarea name="descricao_longa" cols="30" rows="10"></textarea>
+                <br>
 
-            <label>Descrição Curta:</label>
-            <input name="descricao_curta"></textarea>
-            <br>
-           
-            <label>Descrição Longa:</label>
-            <br>
-            <textarea name="descricao_longa" cols="30" rows="10"></textarea>
-            <br>
+                <button class="btn btn-success">Enviar</button>
+            </div>
 
-            <button class="btn btn-success">Enviar</button>
-        </div>
-
-
-    </form>
-
+        </form>
+    </div>
 </section>
 
 {% endblock content %}
